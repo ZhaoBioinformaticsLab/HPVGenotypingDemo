@@ -1,6 +1,6 @@
 # HPV Amplicon Typing Pipeline (Demonstration)
 
-This repository contains a demonstration pipeline for genotyping **Human Papillomavirus (HPV)** from amplicon sequencing data. The pipeline aligns sequencing reads against a comprehensive HPV reference database and reports the mapped read counts, dominant HPV types per sample, and visual summaries via barplots and heatmaps.
+This repository contains a demonstration pipeline for genotyping **Human Papillomavirus (HPV)** from Ion Torrent amplicon sequencing data. The pipeline aligns sequencing reads against a comprehensive HPV reference database and reports the mapped read counts, dominant HPV types per sample, and visual summaries via barplots and heatmaps.
 
 ---
 
@@ -141,6 +141,15 @@ bash ./run_hpv_genotyping_pipeline.sh
 ```
 
 ## 📊 Example Output
+
+**Dominant HPV Summary (HPV\_dominant\_summary.tsv):**
+
+```
+	Dominant_HPV_Type	Mapped_Reads
+SRR1186008	HPV16REF|lcl|Human	1029
+SRR1186009	HPV16REF|lcl|Human	1014
+...
+```
 
 **Dominant HPV Summary (HPV\_dominant\_summary.tsv):**
 
