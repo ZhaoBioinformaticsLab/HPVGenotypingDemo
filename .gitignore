@@ -13,6 +13,13 @@
 *.log
 *.tmp
 
+# Ignore all results except summary plots
+hpv_typing_results/*
+!hpv_typing_results/HPV_genotype_barplot.png
+!hpv_typing_results/HPV_genotype_heatmap.png
+!hpv_typing_results/HPV_genotype_summary.txt
+!hpv_typing_results/*.tsv
+
 # Python cache
 __pycache__/
 *.pyc
