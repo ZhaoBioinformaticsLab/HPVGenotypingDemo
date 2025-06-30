@@ -1,0 +1,26 @@
+# Output and intermediate files
+hpv_typing_results/
+*.sra
+*.fastq
+*.bam
+*.sam
+*.bai
+*.html
+*.json
+
+# Logs
+*.out
+*.err
+*.log
+*.tmp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+
+# Editor/IDE config
+.vscode/
+*.swp
