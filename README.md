@@ -85,16 +85,6 @@ This will reconstruct all necessary outputs in the `hpv_typing_results/` directo
 
 ---
 
-## 📆 Sample Outputs
-
-* `HPV_genotype_report.tsv` – Full matrix of mapped reads per sample per genotype
-* `HPV_genotype_report_condensed.tsv` – Filtered version without zero-only columns
-* `HPV_dominant_summary.tsv` – Dominant HPV type per sample
-* `HPV_genotype_barplot.png` – Stacked bar plot
-* `HPV_genotype_heatmap.png` – Heatmap of read counts
-
----
-
 ## 📆 Example Data Used
 
 The following SRA samples were used for demonstration:
@@ -105,6 +95,16 @@ SRR1186013 SRR1186014 SRR1186015 SRR1186016
 ```
 
 These are publicly available amplicon sequencing datasets.
+
+---
+
+## 📆 Sample Outputs
+
+* `HPV_genotype_report.tsv` – Full matrix of mapped reads per sample per genotype
+* `HPV_genotype_report_condensed.tsv` – Filtered version without zero-only columns
+* `HPV_dominant_summary.tsv` – Dominant HPV type per sample
+* `HPV_genotype_barplot.png` – Stacked bar plot
+* `HPV_genotype_heatmap.png` – Heatmap of read counts
 
 ---
 
@@ -168,7 +168,6 @@ SRR1186008	1029	0
 SRR1186009	1014	0
 ...
 ```
-
 
 
 ### 📊 Bar Plot:
