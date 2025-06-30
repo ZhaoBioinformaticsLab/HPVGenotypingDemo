@@ -1,5 +1,4 @@
 # Output and intermediate files
-hpv_typing_results/
 *.sra
 *.fastq
 *.bam
@@ -20,6 +19,7 @@ __pycache__/
 
 # System files
 .DS_Store
+._.DS_Store
 
 # Editor/IDE config
 .vscode/
