@@ -1,0 +1,17 @@
+HPV Genotyping Summary Report
+==================================
+Total samples processed: 9
+
+Detected HPV Types (non-zero):
+  - HPV16REF|lcl|Human: 127997 mapped reads
+
+Dominant HPV Type per Sample:
+  - SRR1186008: HPV16REF|lcl|Human (1029 reads)
+  - SRR1186009: HPV16REF|lcl|Human (1014 reads)
+  - SRR1186010: HPV16REF|lcl|Human (688 reads)
+  - SRR1186011: HPV16REF|lcl|Human (1016 reads)
+  - SRR1186012: HPV16REF|lcl|Human (545 reads)
+  - SRR1186013: HPV16REF|lcl|Human (1277 reads)
+  - SRR1186014: HPV16REF|lcl|Human (120836 reads)
+  - SRR1186015: HPV16REF|lcl|Human (895 reads)
+  - SRR1186016: HPV16REF|lcl|Human (697 reads)

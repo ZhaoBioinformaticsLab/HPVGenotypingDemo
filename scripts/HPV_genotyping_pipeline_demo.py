@@ -85,6 +85,27 @@ print("\n✅ Summary of dominant HPV types saved to:", OUTDIR / "HPV_dominant_su
 # Step 6: Plotting using condensed data
 df_plot = pd.read_csv(OUTDIR / "HPV_genotype_report_condensed.tsv", sep="\t", index_col=0)
 
+# Step 7: Write summary text file
+summary_file = OUTDIR / "HPV_genotype_summary.txt"
+with open(summary_file, "w") as f:
+    f.write("HPV Genotyping Summary Report\n")
+    f.write("==================================\n")
+    f.write(f"Total samples processed: {len(df)}\n\n")
+
+    f.write("Detected HPV Types (non-zero):\n")
+    detected_types = df_condensed.columns.tolist()
+    for hpv_type in detected_types:
+        total_reads = df[hpv_type].sum()
+        f.write(f"  - {hpv_type}: {total_reads} mapped reads\n")
+
+    f.write("\nDominant HPV Type per Sample:\n")
+    for sample, row in df.iterrows():
+        dom_type = row.idxmax()
+        dom_reads = row[dom_type]
+        f.write(f"  - {sample}: {dom_type} ({dom_reads} reads)\n")
+
+print("📝 Summary file written to:", summary_file)
+
 # Bar plot (stacked)
 plt.figure(figsize=(12, 6))
 df_sorted = df_plot.loc[df_plot.sum(axis=1).sort_values(ascending=False).index]
